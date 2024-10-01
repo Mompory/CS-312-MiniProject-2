@@ -1,0 +1,77 @@
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  background-color: #9bbc0f; /* Game Boy green */
+  color: #0f380f;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #9bbc0f;
+  border: 5px solid #0f380f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #0f380f;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  border: 3px solid #0f380f;
+  background-color: #9bbc0f;
+  color: #0f380f;
+  font-size: 16px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0f380f;
+  border: 3px solid #0f380f;
+  color: #9bbc0f;
+  cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;
+  border-radius: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0f380f;
+  color: #9bbc0f;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: #0f380f;
+  margin-bottom: 20px;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: #0f380f;
+  margin-top: 20px;
+}

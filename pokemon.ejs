@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Pokemon Details</title>
+</head>
+<body>
+  <h1>Details for <%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) %></h1>
+  <img src="<%= pokemon.sprites.front_default %>" alt="<%= pokemon.name %>">
+  
+  <p><strong>Height:</strong> <%= pokemon.height %> decimetres</p>
+  <p><strong>Weight:</strong> <%= pokemon.weight %> hectograms</p>
+
+  <h2>Abilities</h2>
+  <ul>
+    <% pokemon.abilities.forEach(ability => { %>
+      <li><%= ability.ability.name %></li>
+    <% }) %>
+  </ul>
+
+  <h2>Stats</h2>
+  <ul>
+    <% pokemon.stats.forEach(stat => { %>
+      <li><strong><%= stat.stat.name %>:</strong> <%= stat.base_stat %></li>
+    <% }) %>
+  </ul>
+
+  <a href="/">Search for another Pokémon</a>
+</body>
+</html>
